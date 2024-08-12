@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Luckiest+Guy&family=Pacifico&family=Tilt+Warp&display=swap');
+@import url();
+.body {
+    box-sizing: border-box ;
+    background-color: #eeaed5;
+}
+
+.header {
+    font-family: "Pacifico", cursive;
+    color: #fd7acb;
+    font-size: large;
+    border: 5px solid #ff45b1;
+    background-image: url(https://i.ibb.co/zGGw5zy/coverjine.jpg);
+}
+.h1 {
+    background: linear-gradient(#fd7acb,#ecc0dd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #ff45b1;
+}
+
+.topnav a {
+    float:inline-start;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #ff45b1;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #161616 ;
+}
+.container p {
+    z-index: 12;
+    margin: 20px auto 10px;
+    position: relative;
+    color: #fff;
+}
+.container p span {
+    font-weight: 700;
+}
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#161616, #ff45b1);
+    clip-path: circle(30% at 88% 77%);
+}
+.container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff45b1,#161616 );
+    clip-path: circle(20% at 12% 12%);
+}
+
+.container .glassmorphic-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    width: 700px;
+    height: 580px;
+    padding: 40px 30px;
+    margin: 28px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-top: 1px soild rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+.container .glassmorphic-card:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 10em;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+.container .glassmorphic-card .imgBox {
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+}
+.container .glassmorphic-card .imgBox i {
+    font-size: max(80px);
+    color: rgba(255, 255, 255, 0.1);
+}
+.container .glassmorphic-card .contentBox {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    transition: 0.05s;
+}
+.container .glassmorphic-card .contentBox h3 {
+    font-size: 1.8em;
+    color:#ddd ;
+    z-index: 1;
+    font-family: "Pacifico", cursive;
+}
+.container .glassmorphic-card .contentBox p {
+    font-size: 1em;
+    color: #ddd ;
+    font-weight: 300;
+    font-family: "Tilt Warp", sans-serif;
+}
+.container .glassmorphic-card .contentBox a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 1 px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s;
+    cursor: pointer;
+    font-family: "Tilt Warp", sans-serif;
+}
+.container .glassmorphic-card .contentBox a:hover {
+    transform: scale(1.02);
+}
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+} 
